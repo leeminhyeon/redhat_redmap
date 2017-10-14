@@ -1,0 +1,30 @@
+<!-- mh : 각가의 화장실 정보 -->
+
+<head>
+	<!--toilet_detail_info.scss-->
+	<link rel="stylesheet" href="toilet_detail_info.css"/>
+</head>
+
+
+	<div class="container" id="toilet_info_container">
+			<div class="row justify-content-center" id="toilet_listview">
+				<ul class="list-group">
+				    <li class="list-group-item" id="station_info"><img id="station_number" src="/assets/line_flags/<%=$line_image%>.png" /><%= $station_info %>역</li>
+				    <li class="list-group-item" id="">누적 신고량 : X 건</li>
+				    <li class="list-group-item" id="">최근 점검일 : XX/XX/XX</li>
+				    <li class="list-group-item" id="">카메라 수거 : X 개</li>
+			    </ul>
+			</div>
+
+			<div class="row justify-content-center" id="toilet_btnview">
+			    
+			    <!-- mh : link to report page -->
+                	<a class="buttons col-6" for="report_btn" href="/home/report.html"><img class="images" src="/assets/buttons/report_submit.png"/></a>
+                	<input type="button" name="submit" id="report_btn" src="/home/report.html" class="hidden_file">
+			    
+                 <!-- mh : link to photo view page -->	
+                	<a class="buttons col-6" for="photo_view_btn" href="/home/photo_view.html"><img class="images"  src="/assets/buttons/show_photo.png"/></a>
+                	<input type="button" name="submit" id="photo_view_btn" src="/home/photo_view.html" class="hidden_file">
+			</div>
+			
+	</div>

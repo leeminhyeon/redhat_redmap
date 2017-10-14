@@ -1,0 +1,94 @@
+.buttons{
+    margin: 0px;
+    display: inline;
+}
+
+.images{
+    width: 100%;
+    height:auto;
+}
+
+
+/**************************************************/
+/* mh : toilet_detail_info.html의 CSS*/
+
+/* mh : 전체를 감싸는 container CSS*/
+#toilet_info_container{
+  margin-top: 0vh;
+  height: 80vh;
+}
+
+/* mh : 화장실 상세 정보 (누적신고량, 점검일, 수거한 불법카메라 수거 정보)를 보여주는 part*/
+#toilet_listview{
+  width: 100%;
+  height: 80%;
+  margin:0px;
+  padding: 0px;
+}
+
+#station_info{
+    font-weight:bold;
+    display: inline;
+    text-align:center;
+    margin-bottom:0px;
+}
+
+.list-group-item{
+  border:none;
+  color: #4D4D4D;
+  font-family: 'Open Sans', Sans-serif;
+  padding-top : 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom:20px;
+  font-size: 25px;
+
+}
+
+
+/* mh : 신고하기, 신고된 사진 보기 버튼들을 보여주는 part*/
+#toilet_btnview{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content : space-around;
+    margin : 0px;
+    padding : 0px;
+
+}
+
+
+/*호선 숫자 이미지 크기 조절*/
+#station_number{
+  width : auto;
+  height : 5vh;
+  margin-right : 10px;
+}
+
+
+.station_nav {
+  height: 10vh;
+  color: #4D4D4D;
+  font-size: 3.5vh;
+  text-align: center;
+  font-weight: 800;
+}
+
+
+#station_name{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  top : 0px;
+}
+
+/*h1 {font-family:'RoadWC98';*/
+/*    background-color:#FFFFFF; }*/

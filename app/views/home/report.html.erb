@@ -1,0 +1,48 @@
+<!-- mh : 사진 신고 페이지 -->
+<head>
+    <!--navbar를 위한 application.scss-->
+    <link rel="stylesheet" href="application.scss"/>
+	<!--report.css-->
+	<link rel="stylesheet" href="report.css"/>
+</head>
+<body>
+
+	<div class="container">
+	    <div class="row justify-content-center">
+    	    <div>
+    	        <!-- mh : image upload form -->
+                <form action="/home/upload" method="post" enctype="multipart/form-data">
+            	    <!-- mh : upload_photo -->
+                	<label for="upload_photo" class="d-flex justify-content-center"><img id="my_photo" src="/assets/report_default.png"/></label>
+                	<input type="file" name="pic" id="upload_photo" accept="/image/*" class="hidden_file">
+    	    </div>
+
+        	<div>
+            	    <!-- mh : submit button -->
+                	<label for="upload-submit"><img src="/assets/buttons/report_submit.png" class="offset-3 col-6"/></label>
+                	<input type="submit" name="submit" id="upload-submit" class="hidden_file">
+                </form>
+        	</div>
+	    </div>
+	</div>
+
+
+<!--mh : upload한 사진을 preview할 수 있는 script 코드 -->
+<script type="text/javascript">
+        function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#my_photo').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+    $("#upload_photo").change(function(){
+        readURL(this);
+    });
+</script>
+</body>

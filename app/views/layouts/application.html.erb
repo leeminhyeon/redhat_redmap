@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap CSS -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+     <!--navigation bar-->
+    <header class="container" id="redmap_nav_container">
+        <div class="row justify-content-center" id="redmap_nav">
+            <a class="redmap_nav_items col-2" href="/home/index.html"><img id="back_btn" src="/assets/buttons/redmap_back.png"></img></a>
+            <img class="redmap_nav_items offset-1 col-7" id="redmap_logo" src="/assets/redmap_logo.png"></img>
+            <a class="redmap_nav_items offset-1 col-2"href="/home/index.html"><img id="home_btn" src="/assets/buttons/redmap_home.png"/></a>
+        </div>
+    </header>
+<%= yield %>
+
+  
+
+	<!-- jQuery CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Bootstrap CDN --> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

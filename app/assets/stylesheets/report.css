@@ -1,0 +1,85 @@
+/***************************report.html******************************/
+/*mh : file-input form customize css*/
+label {
+   cursor: pointer;
+   margin-top: 20px;
+   /* Style as you please, it will become the visible UI component. */
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+/*mh : 원래의 input file의 모습을 숨긴다*/
+.hidden_file{
+    position : absolute;
+    right:0px;
+    top : 0px;
+    opacity : 0;
+    z-index: -1;
+    filter : alpha(opacity=0);
+    -ms-filter: "alpha(opacity=0)";
+    -khtml-opacity:0;
+    -moz-opacity:0;
+}
+
+
+/*mh : Web에서 보여지는 view*/
+.report_container{
+    width: 800px;
+    height: 800px;
+}
+.report_container_photo{
+    width: 40%;
+    height: 40%;
+}
+
+/*mh : preview image resizing*/
+#my_photo{
+    width: 100%;
+    height: 100%;
+}
+
+.report_container_submit{
+    width: 10%;
+    height: 10%;
+}
+
+/*mh : mobile에서 보여지는 view*/
+@media (min-width: 300px) and (max-width: 767px){
+
+    /*mh : preview image resizing*/
+    #my_photo{
+        width: auto;
+        height: 50vh;
+    }
+
+    .report_container_submit{
+        width : 100%;
+        height : 20vh;
+    }
+}
+
+
+/***************************report_accept.html******************************/
+/*mh : report_accept의 이미지 크기 맞추기*/
+/*web version*/
+#report_accept{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height:100vh;
+    width:auto;
+}
+
+/*mobile version*/
+@media (min-width: 300px) and (max-width: 767px){
+   #report_accept{
+        height:80vh;
+        width:auto;
+    }
+}
+
+
+
+

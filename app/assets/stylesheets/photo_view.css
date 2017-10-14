@@ -1,0 +1,17 @@
+/*mh : report_accept의 이미지 크기 맞추기*/
+/*web version*/
+#ready_page{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height:100vh;
+    width:auto;
+}
+
+/*mobile version*/
+@media (min-width: 300px) and (max-width: 767px){
+   #ready_page{
+        height:80vh;
+        width:auto;
+    }
+}
