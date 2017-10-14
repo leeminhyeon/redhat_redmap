@@ -20,8 +20,6 @@
 @font-face {
     font-family: "RoadWC98" !important;
     src : local(※), url('assets/fonts/RoadWC98.otf') format('opentype');
-
-    
 } 
 
 * {font-family:'RoadWC98';
@@ -30,22 +28,20 @@
 
 /*navbar*/
 /*web version*/
-#redmap_nav{
-   
-}
+
 
 /*mobile version*/
 @media (min-width: 300px) and (max-width: 767px){
     #redmap_nav_container{
+        margin:0px;
+        padding:0px;
         width: 100%;
         height: 10vh;
         background-color: #FFFFFF;
     }
     #redmap_nav{
-        /*min-width: 300px;*/
-        /*max-width: 300px;*/
-        /*min-height: 150px;*/
-        /*max-height: 150px;*/
+        margin:0px;
+        padding:0px;
         width: 100%;
         height:10vh;
         position: fixed;
@@ -56,15 +52,15 @@
 
 /*navbar items*/
 /*web version*/
-#redmap_nav{
-   
-}
 
 /*mobile version*/
 @media (min-width: 300px) and (max-width: 767px){
    .redmap_nav_items{
-       margin: 0px;
-       padding: 15px;
+       /*margin-top: 10px; */
+       /*margin-bottom: 10px;*/
+       /*margin-left:0px;*/
+       /*margin-right:0px;*/
+       padding: 0px;
        width: 100%;
        height: 10vh;
    }
@@ -78,6 +74,7 @@
        height: 100%;
    }
 }
+
 
 
 
