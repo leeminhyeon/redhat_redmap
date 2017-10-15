@@ -46,61 +46,132 @@ a {
 }
 
 /* 상황보고 제목 글씨 CSS*/
+/*web version*/
+@media (min-width: 768px){
 .accordion .link {
-  cursor: pointer;
-  display: block;
-  padding: 15px;
-  color: #4D4D4D;
-  font-size: 3vh;
-  font-weight: 700;
-  border-bottom: 1px solid #CCC;
-  position: relative;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+    color: #4D4D4D;
+    font-size: 3vh;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .accordion li:last-child .link { border-bottom: 0; text-align: center;}
+  
+  .accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+  }
+  
+  .accordion li.open .link { color: #A62F3E; }
+  
+  .accordion li.open i { color: #A62F3E; }
+  
+  .accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  /**
+   * Submenu
+   -----------------------------*/
+  .submenu {
+    padding : 0 1vh;
+    display: none;
+    /*background: #444359;*/
+    font-size: 3vh;
+  }
+  
+  .submenu li { 
+    border-bottom: 1px solid #4b4a5e;
+    padding: 5px; 
+  }
+  
+}
+/*mobile version*/
+@media (min-width: 300px) and (max-width: 767px){
+  #notice_view{
+    margin-top: 10vh;
+    width: 100%;
+    position:fixed;
+  }
+  .accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+    color: #4D4D4D;
+    font-size: 3vh;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .accordion li:last-child .link { border-bottom: 0; }
+  
+  .accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+  }
+  
+  .accordion li.open .link { color: #A62F3E; }
+  
+  .accordion li.open i { color: #A62F3E; }
+  
+  .accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  /**
+   * Submenu
+   -----------------------------*/
+  .submenu {
+    padding : 0 1vh;
+    display: none;
+    /*background: #444359;*/
+    font-size: 3vh;
+  }
+  
+  .submenu li { 
+    border-bottom: 1px solid #4b4a5e;
+    padding: 5px; 
+  }
 }
 
-.accordion li:last-child .link { border-bottom: 0; }
-
-.accordion li i {
-  position: absolute;
-  top: 16px;
-  left: 12px;
-  font-size: 18px;
-  color: #595959;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.accordion li i.fa-chevron-down {
-  right: 12px;
-  left: auto;
-  font-size: 16px;
-}
-
-.accordion li.open .link { color: #A62F3E; }
-
-.accordion li.open i { color: #A62F3E; }
-
-.accordion li.open i.fa-chevron-down {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-/**
- * Submenu
- -----------------------------*/
-.submenu {
-  padding : 0 1vh;
-  display: none;
-  /*background: #444359;*/
-  font-size: 3vh;
-}
-
-.submenu li { 
-  border-bottom: 1px solid #4b4a5e;
-  padding: 5px; 
-}

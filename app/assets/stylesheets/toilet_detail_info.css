@@ -48,16 +48,30 @@
 
 
 /* mh : 신고하기, 신고된 사진 보기 버튼들을 보여주는 part*/
-#toilet_btnview{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content : space-around;
-    margin : 0px;
-    padding : 0px;
-
+/*web version*/
+@media (min-width: 768px){
+  #toilet_btnview{
+      width: 40%;
+      height: auto;
+      display: flex;
+      justify-content : space-around;
+      margin : auto;
+      padding : 0px;
+  
+  }
 }
-
+/*mobile version*/
+@media (min-width: 300px) and (max-width: 767px){
+  #toilet_btnview{
+      width: 100%;
+      height: 10%;
+      display: flex;
+      justify-content : space-around;
+      margin : 0px;
+      padding : 0px;
+  
+  }
+}
 
 /*호선 숫자 이미지 크기 조절*/
 #station_number{
