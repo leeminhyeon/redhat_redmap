@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   post '/home/upload'
   get '/home/photo_view'
   
-
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
