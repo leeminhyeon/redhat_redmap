@@ -13,13 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20171015133547) do
 
-  create_table "notices", force: :cascade do |t|
-    t.string   "title"
-    t.text     "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "reports", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
