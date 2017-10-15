@@ -19,4 +19,25 @@
         height:100vh;
         width:100%;
     }
+    
+    
+    #home_view{
+        position:fixed;
+    }
+}
+
+
+/*************************************main.page의 css**********************************/
+/*web version*/
+#map_view{
+
+    margin :0px;
+    padding:0px;
+    
+}
+/*mobile version*/
+@media (min-width: 300px) and (max-width: 767px){
+    #map_view{
+        overflow:auto;
+    }
 }

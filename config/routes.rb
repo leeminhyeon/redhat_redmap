@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/home/toilet_detail_info'
   post '/home/upload'
   get '/home/photo_view'
+  
 
   root 'home#index'
 

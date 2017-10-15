@@ -1,0 +1,4 @@
+/*mh : 화장실 이미지 scroll*/
+#toilet_select_view{
+    overflow: auto;
+}

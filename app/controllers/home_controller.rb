@@ -77,7 +77,7 @@ class HomeController < ApplicationController
         
   end
   
-   
+  #mh : upload action
   def upload
     file = params[:pic]
     

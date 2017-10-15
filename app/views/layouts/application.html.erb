@@ -3,7 +3,7 @@
 <head>
   <title>Workspace</title>
   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
     <!-- Bootstrap CSS -->
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	
@@ -16,9 +16,9 @@
  <!--navigation bar-->
     <header class="container" id="redmap_nav_container">
         <div class="row justify-content-center" id="redmap_nav">
-            <a class="redmap_nav_items col-2" href="/home/index.html"><img id="back_btn" src="/assets/buttons/redmap_back.png"></img></a>
-            <img class="redmap_nav_items offset-1 col-7" id="redmap_logo" src="/assets/redmap_logo.png"></img>
-            <a class="redmap_nav_items offset-1 col-2"href="/home/index.html"><img id="home_btn" src="/assets/buttons/redmap_home.png"/></a>
+            <div class="redmap_nav_items col-2 col-md-1 col-lg-1"><%= link_to image_tag('/assets/buttons/redmap_back.png', id:"back_btn"), :back %></div>
+            <img class="redmap_nav_items col-7 col-md-3 col-lg-3" id="redmap_logo" src="/assets/redmap_logo.png"></img>
+            <a class="redmap_nav_items col-2 col-md-1 col-lg-1"href="/home/index.html"><img id="home_btn" src="/assets/buttons/redmap_home.png"/></a>
         </div>
     </header>
 <%= yield %>

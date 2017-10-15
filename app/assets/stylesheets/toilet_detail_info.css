@@ -14,7 +14,8 @@
 
 /* mh : 전체를 감싸는 container CSS*/
 #toilet_info_container{
-  margin-top: 0vh;
+  position:fixed;
+  margin-top: 70px;
   height: 80vh;
 }
 

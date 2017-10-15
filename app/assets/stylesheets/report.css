@@ -25,26 +25,35 @@ body{
 
 
 /*mh : Web에서 보여지는 view*/
-.report_container{
-    width: 800px;
-    height: 800px;
-}
-.report_container_photo{
-    width: 40%;
-    height: 40%;
-}
+/*@media(min-width:767){*/
 
-/*mh : preview image resizing*/
-#my_photo{
-    width: 100%;
-    height: 100%;
-}
+/*    #report_view{*/
+/*    margin-top: 10vh; */
+/*    height:9vh;*/
+/*    width:auto;*/
+/*}*/
+   
+/*    .report_container{*/
+/*        width: auto;*/
+/*        height: 10vh;*/
+/*    }*/
+/*    .report_container_photo{*/
+/*        width: 60%;*/
+/*        height: 60%;*/
+/*    }*/
+    
+    /*mh : preview image resizing*/
+/*    #my_photo{*/
+/*        width: 100%;*/
+/*        height: 100%;*/
+/*    }*/
+    
+/*    .report_container_submit{*/
+/*        width: 10%;*/
+/*        height: 10%;*/
+/*    }*/
 
-.report_container_submit{
-    width: 10%;
-    height: 10%;
-}
-
+/*}*/
 /*mh : mobile에서 보여지는 view*/
 @media (min-width: 300px) and (max-width: 767px){
 
@@ -52,6 +61,11 @@ body{
     #my_photo{
         width: auto;
         height: 50vh;
+    }
+    
+    #report_view{
+        position: fixed;
+        margin-top: 80px;
     }
 
     .report_container_submit{
@@ -64,21 +78,25 @@ body{
 /***************************report_accept.html******************************/
 /*mh : report_accept의 이미지 크기 맞추기*/
 /*web version*/
-#report_accept{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height:100vh;
-    width:auto;
+@media(min-width:768px){
+    #report_accept{
+        margin-left: 30%;
+        position:fixed;
+        height: 100vh;
+        width: auto;
+    }
 }
-
 /*mobile version*/
 @media (min-width: 300px) and (max-width: 767px){
    #report_accept{
-        height:80vh;
-        width:auto;
+        position: fixed;
+        height:90vh;
+        width:100%;
     }
+
 }
+
+
 
 
 
