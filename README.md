@@ -48,7 +48,7 @@ Terminal:
 =======
 ```
 
-### File explain
+### Page Explain
 1. 사용자 페이지
 (1) /home/index.html : 홈 화면
 - redmap의 홈 화면
@@ -70,11 +70,13 @@ Terminal:
 (6) /home/photo_view.html
 - 신고 된 사진들을 모아 볼 수 있는 페이지(서비스 준비중)
 
+(7) /home/notice.html
+- 관리자가 업로드 한 공지 및 신고 처리 정보를 볼 수 있음
+
 2. 관리자 페이지 (공지 관리)
 (1) /notices/index.html
 - url을 통해서만 접속 가능함
 - 관리자가 공지를 업로드하고 업로드 된 공지를 수정, 삭제할 수 있음
-
 
 ## Built With
 
