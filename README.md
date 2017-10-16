@@ -49,34 +49,36 @@ Terminal:
 ```
 
 ### Page Explain
+
 1. 사용자 페이지
-(1) /home/index.html : 홈 화면
-- redmap의 홈 화면
+   (1) /home/index.html : 홈 화면
+   - redmap의 홈 화면
 
-(2) /home/main.html : 지하철 역 선택 화면
-- 원하는 지하철 역을 선택하는 페이지
+   (2) /home/main.html : 지하철 역 선택 화면
+   - 원하는 지하철 역을 선택하는 페이지
 
-(3) /home/select_toilet.html : 화장실 선택 페이지
-- 화장실이 여러개인 지하철 역을 선택하면 이 페이지로 이동
+   (3) /home/select_toilet.html : 화장실 선택 페이지
+   - 화장실이 여러개인 지하철 역을 선택하면 이 페이지로 이동
 
-(4) /home/toilet_detail_info.html
-- 화장실에 대한 자세한 정보 제공
-- 신고 누적수, 최근 검진일, 발견된 불법카메라 수에 대한 정보 제공
-- 신고하기 및 신고 된 사진 보기가 가능
+   (4) /home/toilet_detail_info.html
+   - 화장실에 대한 자세한 정보 제공
+   - 신고 누적수, 최근 검진일, 발견된 불법카메라 수에 대한 정보 제공
+   - 신고하기 및 신고 된 사진 보기가 가능
 
-(5) /home/report.html
-- 사진 업로드를 통해 신고하는 페이지
+   (5) /home/report.html
+   - 사진 업로드를 통해 신고하는 페이지
 
-(6) /home/photo_view.html
-- 신고 된 사진들을 모아 볼 수 있는 페이지(서비스 준비중)
+   (6) /home/photo_view.html
+   - 신고 된 사진들을 모아 볼 수 있는 페이지(서비스 준비중)
 
-(7) /home/notice.html
-- 관리자가 업로드 한 공지 및 신고 처리 정보를 볼 수 있음
+   (7) /home/notice.html
+   - 관리자가 업로드 한 공지 및 신고 처리 정보를 볼 수 있음
 
 2. 관리자 페이지 (공지 관리)
-(1) /notices/index.html
-- url을 통해서만 접속 가능함
-- 관리자가 공지를 업로드하고 업로드 된 공지를 수정, 삭제할 수 있음
+
+   (1) /notices/index.html
+   - url을 통해서만 접속 가능함
+   - 관리자가 공지를 업로드하고 업로드 된 공지를 수정, 삭제할 수 있음
 
 ## Built With
 
