@@ -113,7 +113,7 @@ a {
   #notice_view{
     margin-top: 10vh;
     width: 100%;
-    position:fixed;
+   
   }
   .accordion .link {
     cursor: pointer;

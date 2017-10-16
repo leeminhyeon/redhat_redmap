@@ -99,3 +99,8 @@
        height: 100%;
    }
 }
+
+.content_text_form{
+     white-space:pre-line; 
+     overflow:visible;
+}

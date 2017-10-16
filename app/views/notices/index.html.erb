@@ -1,0 +1,27 @@
+<div class="container">
+    <div col-12> <h1>공지 등록 페이지</h1></div>
+    <div class="row justify-content-center">
+       
+        <form action="/notices/create" method="post">
+            <div class="col-12">공지 제목 : <input type="text" name="input_title" value="X월 X일 상황보고"></input></div>
+            <div class="col-12">신고 역명 : <input type="text" name="input_report_station" value="신고 역명"></input></div>
+            <div class="col-12">답변 내용 :</div>
+            <textarea name="input_content" rows="10" cols="100" placeholder="답변 내용"></textarea>
+            <div class="col-12"><input type="submit" value="공지 등록"></input></div>
+        </form>
+    </div>
+    
+    <div class="mt-3  mb-3">
+        <h1>등록된 공지 출력</h1>
+        <% $notices.each do |p| %>
+            <br>
+            <li><b><%=p.title%></b>
+            <br><%=p.report_station%>
+            <div class="content_text_form"><br><%=p.content%><br></div>
+            <a href="/notices/edit/<%=p.id%>">[수정]</a><a href="/notices/destroy/<%=p.id%>">[삭제]</a>
+            </li>
+            
+        <%end%>
+    </div>
+</div>
+

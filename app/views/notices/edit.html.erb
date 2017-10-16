@@ -1,0 +1,13 @@
+<div class="container">
+    <div col-12> <h1>공지 수정 페이지</h1></div>
+    <div class="row justify-content-center">
+       
+        <form action="/notices/update/<%@editnotice.id%>" method="post">
+            <div class="col-12">공지 제목 : <input type="text" name="input_title" value="X월 X일 상황보고"></input></div>
+            <div class="col-12">신고 역명 : <input type="text" name="input_report_station" value="신고 역명"></input></div>
+            <div class="col-12">답변 내용 :</div>
+            <textarea name="input_content" rows="10" cols="100" placeholder="답변 내용"></textarea>
+            <div class="col-12"><input type="submit" value="공지 수정"></input></div>
+        </form>
+    </div>
+    

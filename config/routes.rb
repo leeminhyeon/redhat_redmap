@@ -10,7 +10,15 @@ Rails.application.routes.draw do
   get '/home/photo_view'
   
   root 'home#index'
-
+  
+  #notice 관리 페이지
+  get '/notices/index'
+  post '/notices/create'
+  get '/notices/edit/:notice_id' => 'notices#edit'
+  post 'notices/update'
+  post '/notices/update/:notice_id' => "notices#update"
+  get '/notices/destroy/:notice_id' => 'notices#destroy'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
