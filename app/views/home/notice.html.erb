@@ -14,8 +14,36 @@
 <!-- Contenedor -->
 	<ul id="accordion" class="accordion row justify-content-center">
 	  <li class="col-12 col-md-10 col-lg-10">
+		<div class="link">레드맵 사용방법<i class="fa fa-chevron-down">▴</i></div>
+		<ul class="submenu">
+			
+		<center><img src="/assets/redmap_logo.png" style="width: 200px;"></center><br>
+		<b><center><h5>“지하철 공중화장실 몰래카메라 신고”</h5></center></b><br>
+
+		<div style="margin: 0px 20px">
+			<h4>✓ 신고하기</h4>: 화장실 내 몰래카메라로 의심 가는 부분을 촬영 후 업로드해 신고하거나 해당 화장실에 신고된 사진들을 열람할 수 있다. 
+			<p>
+				💁 사용방법 <br>
+				🚽 역내 화장실이 1개 일 경우<br>
+	    		역 선택> 화장실 정보 페이지> 신고하기/사진보기<br>
+	            🚽 역내 화장실이 2개 이상일 경우<br>
+	    		역 선택> 화장실 선택 페이지> 화장실 정보 페이지> 신고하기/사진보기
+			</p><br>
+
+			<h4>✓ 조회하기</h4>: 누적 신고 상황을 우선으로 열람할 수 있도록 해당 역의 모든 화장실의 정보를 통합해 보여준다. <br>
+				
+			💁 사용방법 <br>
+			역 선택 > 정보 조회<br><br>
+
+			<h4>✓ 신고상황</h4>: 7~10일 간격으로 누적된 신고 데이터에 대한 ‘서울교통공사’의 답변을 게시글 형식으로 보여준다.
+		</div>
+		</ul>
+	  </li>
+	  <li class="col-12 col-md-10 col-lg-10">
 	  	<% $notices.each do |p| %>
 	  	<div class="link"><%=p.title%><i class="fa fa-chevron-down">▴</i></div>
+	  		
+	  	
     	    <ul class="submenu">
     	    	
     	        <li><b>신고내역</b><br>
