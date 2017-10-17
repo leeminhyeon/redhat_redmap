@@ -51,6 +51,7 @@ Terminal:
 ### Page Explain
 
 1. 사용자 페이지
+
    (1) /home/index.html : 홈 화면
    - redmap의 홈 화면
 
