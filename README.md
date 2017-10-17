@@ -16,7 +16,7 @@ _출처:http://newspaper.tistory.com/2511009_
 
 _출처:http://news.joins.com/article/21774258
 http://news.jtbc.joins.com/article/article.aspx?news_id=NB11240211
-http://imnews.imbc.com/replay/2016/nw930/article/3871091_19837.html _
+http://imnews.imbc.com/replay/2016/nw930/article/3871091_19837.html_
 
 
 하지만 안타깝게도 다수는 언제, 어디서, 어떻게 촬영돼 개인의 사적인 모습이 인터넷 세상을 떠돌게 될지 모르는 불안감과 공포감에 휩싸여 자구책을 마련하는 사람들의 행동을 단순히 예민하게 반응한다고 치부한다. 과연 잠재적 피해자들의 피해 망상일 뿐이고 그들 모두의 신경이 유난히 예민한 것일까.
